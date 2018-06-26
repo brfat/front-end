@@ -1,0 +1,32 @@
+
+<html lang="pt">
+    <head>
+<title>query Selector All</title>
+    </head>
+
+    <body>
+        <div class="teste">1</div>
+        <div class="teste">2</div>
+        <div class="teste">3</div>
+
+        <div id="pai">
+            <div class="filho">1</div>
+            <div class="filho">2</div>
+            <div class="filho">3</div>
+        </div>
+
+        <div id="paizao">
+            <div class="filho">oi</div>
+            <div class="filho">hello</div>
+            <div class="filho">olá</div>
+        </div>
+        
+
+        <script>
+               console.log(document.getElementById("pai").querySelectorAll(".filho"));
+                
+        </script>
+
+    </body>
+
+</html>

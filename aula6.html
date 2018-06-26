@@ -1,0 +1,26 @@
+
+
+<html lang="pt">
+    <head>
+<title>Create Element</title>
+    </head>
+
+    <body>
+        <div id="titulo">
+
+        </div>
+
+        <script>
+               const title = document.createElement("p");
+                title.innerHTML = "Novo Titulo";
+
+                document.getElementById("titulo").appendChild(title);
+
+                console.log(typeof title);
+
+
+        </script>
+
+    </body>
+
+</html>

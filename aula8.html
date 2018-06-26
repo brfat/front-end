@@ -1,0 +1,26 @@
+
+<html lang="pt">
+        <head>
+    <title>Remove Child</title>
+        </head>
+    
+        <body>
+            <div id="nissan">
+                    <ul></ul>
+            </div>
+           
+    
+            <script>
+                    const carro1 = document.createElement("li");
+                    const carro2 = document.createElement("li");
+    
+                    carro1.innerHTML = "Audi"; 
+                    carro2.innerHTML = "Fusca";                   
+                
+                    document.querySelector("ul").appendChild(carro1);
+                    document.querySelector("ul").removeChild(carro2);
+            </script>
+    
+        </body>
+    
+    </html>

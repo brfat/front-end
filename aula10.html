@@ -1,0 +1,63 @@
+<html lang="pt">
+
+<head>
+    <title>Type Of - Retorna o tipo</title>
+</head>
+
+<body>
+    <div id="lista_carros">
+
+    </div>
+
+    <script>
+        const carros = {
+            modelo: "Honda Fit",
+            placa: "add1234",
+            numPorta: "4",
+            marca: "Honda",
+            cor: "Azul",
+            opcionais: {
+                cambio: "Automático",
+                gps: "Via Google Maps"
+            }
+        }
+
+
+
+        const listaCarros = document.createElement("ul");
+        listaCarros.innerHTML = "Lista de Carros";
+
+        document.getElementById("lista_carros").appendChild(listaCarros);
+
+        const modelo = document.createElement("li");
+        modelo.innerHTML = carros.modelo;
+
+        const placa = document.createElement("li");
+        placa.innerHTML = carros.placa;
+
+        const numPorta = document.createElement("li");
+        numPorta.innerHTML = carros.numPorta;
+
+        const cor = document.createElement("li");
+        cor.innerHTML = carros.cor;
+
+        document.querySelector("ul").appendChild(modelo);
+        document.querySelector("ul").appendChild(placa);
+        document.querySelector("ul").appendChild(numPorta);
+        document.querySelector("ul").appendChild(cor);
+
+
+       //document.querySelector("ul").appendChild(honda);
+        //document.write("Placa: " + carros.placa);
+        //document.write("Cor: " + carros.cor);
+       // document.write("Câmbio: " + carros.opcionais.cambio);
+        //document.write("GPS: " + carros.opcionais.gps);
+
+
+       // document.getElementById("titulo").createElement("h5");
+
+    </script>
+
+</body>
+
+</html>
